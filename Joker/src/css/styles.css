@@ -1,0 +1,218 @@
+/******
+*****
+****
+*** @autor: Anastácio Paulino
+****
+*****
+*******/
+/*** Geral 
+---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+background: url(./../imagens/Retângulo\ 7@2x.png);
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.card-left {
+    display: none;
+}
+
+
+.card-content {
+    padding: 30px;
+    box-shadow: 0px 6px 5px #0000152d;
+    border-radius: 10px;
+    background: #1018305e;
+}
+
+.card-title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.625em;
+    color: #AAAABB;
+}
+
+.btn-google {
+    background: #2A58B0;
+    color: #AAAABB;
+    text-align: center;   
+    padding: 10px 12px 10px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: .7s;
+    border: none;
+}
+
+.btn-google:hover {
+    cursor: pointer;
+    background: #4A3139;
+}
+.register {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-social {
+    margin-left: 20px;
+}
+
+.divider {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+ }
+
+ .divider span {
+     color: #AAAABB;
+ }
+ 
+ .divider hr{
+     margin-left: 10px;
+     margin-right: 10px;
+     flex: 2;
+     color: rgba(8, 12, 25, 50%);
+     background-color: rgba(8, 12, 25, 50%);
+ }
+
+form .two-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 7px;
+    font-size: 1.2em;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    background-color: rgba(8, 12, 25, 50%);
+    border: none;
+    color: rgb(148, 148, 148);
+}
+
+form input:focus {
+    border: 1px solid rgb(74, 79, 99);
+    border-radius: 5px;
+}
+
+form label {
+    font-family: 'Roboto';
+    font-size: 1.10em;
+    color: #A2A8BF;
+}
+
+.input-request {
+    font-size: .75em;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.input-request-item {
+    margin-left: 10px;
+}
+
+form button[type="submit"] {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #4A3139;
+    color: #AAAABB;
+    text-align: center;   
+    padding: 10px 12px 10px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: .7s;
+    border: none;
+    width: 100%;
+}
+
+form button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #2A58B0;
+}
+
+.login {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 40%;
+}
+
+@media(max-width: 1234px) {
+    form .two-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+}
+
+@media(min-width: 1018px) {
+    .card {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 20px;
+        box-shadow: 0px 6px 5px #0000157e;
+        background: #10162F;
+    }
+
+    .card-left {
+        background: url(./../imagens/wallpapersden.com_joker-2019-movie-4k_1280x2120@2x.png) no-repeat;
+        color: white;
+        display: flex;
+        align-items: flex-end;  
+        justify-content: center; 
+        padding: 30px;
+        border-radius: 0px 0px 0px 20px;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    .card-left > div {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-left > div img {
+        margin-right: 5px;
+    }
+}
+
+@media(max-width: 850px) {
+    form .two-input {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    .btn-social {
+        margin-top: 10px;
+    }
+}
+
+@media(min-width: 614px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-right {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Joker</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="card-left">
+          <div>
+            <img src="./imagens/Icon awesome-copyright@2x.png" alt="">
+            <p>Anastácio Paulino, 2021.</p>  
+          </div>
+        </div>
+        <div class="card-right">
+          <div class="card-content">
+            <div class="">
+              <h1 class="card-title">Inscreva-se na plataforma</h1>
+              <div class="register">
+                <button class="btn btn-google">Inscrever-se com o Google</button>
+                <a href="" class="btn-social">
+                  <img src="./imagens/Icon awesome-facebook.svg" alt="" />
+                </a>
+                <a href="" class="btn-social">
+                  <img src="./imagens/Icon awesome-github.svg" alt="" />
+                </a>  
+              </div>
+            </div>
+            <div class="divider">
+              <hr> <span>Ou</span> 
+              <hr>
+            </div>
+            <form action="">
+              <div class="two-input">
+                <label for="">
+                  Nome: <br />
+                  <input type="text" name="nome" />
+                </label>
+                <label for="apelido">
+                  Apelido: <br />
+                  <input type="text" name="apelido" id="apelido" />
+                </label>
+              </div>
+              <label for="">
+                Digite o nome de usuário:<br />
+                <input type="text" name="nome_usuario" />
+                <p class="input-request">
+                  Obrigatório 150 caracteres ou menos. Letras, números e
+                  @/./+/-/_ apenas.
+                </p>
+              </label>
+              <label for="">
+                Endereço E-mail: <br />
+                <input type="email" name="email" />
+              </label>
+              <label for="">
+                Senha: <br />
+                <input type="password" name="senha1" />
+                <ul class="input-request">
+                  <li class="input-request-item">
+                    Sua senha não pode ser muito parecida com o resto das suas
+                    informações pessoais.
+                  </li>
+                  <li class="input-request-item">Sua senha precisa conter pelo menos 8 caracteres.</li>
+                  <li class="input-request-item">Sua senha não pode ser uma senha comumente utilizada.</li>
+                  <li class="input-request-item">Sua senha não pode ser inteiramente numérica.</li>
+                </ul>
+              </label>
+              <label for="">
+                Confirmação da senha: <br />
+                <input type="password" name="senha2" />
+                <p class="input-request">
+                  Informe a mesma senha informada anteriormente, para
+                  verificação.
+                </p>
+              </label>
+
+              <button type="submit">Enviar dados</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
